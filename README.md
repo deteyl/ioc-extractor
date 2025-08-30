@@ -1,0 +1,64 @@
+
+# IOC Extractor
+
+A powerful CLI tool for extracting Indicators of Compromise (IOCs) from various file formats. Designed for cybersecurity professionals and digital forensics as my training project
+
+## Features
+
+- Extract IOCs from multiple file formats: PDF, DOCX, HTML, JSON, CSV, LOG and text files
+-  Support for various IOC types: IP addresses, hashes, domains, URLs, emails, CVEs
+- Multiple output formats: text, JSON, CSV
+- Streaming mode for large files
+- Validation of extracted IOCs
+- Python-based with easy installation via pip
+
+## Standard Installation
+
+Install my-project with pip:
+
+```bash
+pip install ioc-extractor
+```
+### For Kali Linux Users 
+Using pipx: 
+```bash
+sudo apt install pipx
+pipx ensurepath
+pipx install ioc-extractor
+```  
+## Usage/Examples
+Getting Help
+```bash
+# Show main help with all available commands
+ioc-extractor --help
+
+# Show help for the extract command
+ioc-extractor extract --help
+
+# Show help for other commands
+ioc-extractor formats --help
+ioc-extractor types --help
+```
+Basic Extraction
+```bash
+ioc-extractor extract document.pdf
+```
+Save Results to a File
+```bash
+ioc-extractor extract document.pdf -o results.json -f json
+```
+Extract Specific IOC Types Only
+```bash
+ioc-extractor extract document.pdf --ipv4
+```
+View Supported Formats and IOC Types
+```bash
+ioc-extractor formats
+ioc-extractor types
+```
+## Building from Source
+```bash
+git clone https://github.com/deteyl/ioc-extractor.git
+cd ioc-extractor
+pip install -e .
+```
