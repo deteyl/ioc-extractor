@@ -39,6 +39,8 @@ ioc-extractor extract --help
 ioc-extractor formats --help
 ioc-extractor types --help
 ```
+<img width="1456" height="348" alt="image" src="https://github.com/user-attachments/assets/dedc8155-7004-4ac4-a829-c81d7f70acd0" />
+
 Basic Extraction
 ```bash
 ioc-extractor extract document.pdf
@@ -51,11 +53,15 @@ Extract Specific IOC Types Only
 ```bash
 ioc-extractor extract document.pdf --ipv4
 ```
+<img width="963" height="279" alt="image" src="https://github.com/user-attachments/assets/b7bf2c2f-8d0c-4183-95ad-b31786e2eb84" />
+
 View Supported Formats and IOC Types
 ```bash
 ioc-extractor formats
 ioc-extractor types
 ```
+<img width="508" height="219" alt="image" src="https://github.com/user-attachments/assets/6674fb70-d1a9-4cd7-838f-f38117377513" />
+
 ## Building from Source
 ```bash
 git clone https://github.com/deteyl/ioc-extractor.git
